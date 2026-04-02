@@ -8,7 +8,7 @@
   margin-bottom: 50px;
 
   background-color: var(--primary-background-color);
-  border-radius: 5px;
+  border-radius: 4px;
 
   box-shadow: var(--primary-item-shadow);
 }
@@ -23,7 +23,7 @@
   width: 163px;
   margin-bottom: 30px;
 
-  background-color: gray;
+  background-color: var(--secondary-color);
   border-radius: 50%;
 
   box-shadow: var(--secondary-item-shadow);
@@ -85,13 +85,18 @@
   text-align: center;
   width: 100%;
 
-  background-color: var(--primary-background-color);
-  border-top: 1px solid var(--secondary-color);
-  border-right: 1px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  border-top: 1px solid black;
+  border-right: 2px solid black;
+}
 
-  :nth-of-type(3n) {
-    border-right: none;
-  }
+.statsItem:last-of-type {
+  border-right: none;
+  border-bottom-right-radius: 4px;
+}
+
+.statsItem:first-of-type {
+  border-bottom-left-radius: 4px;
 }
 
 .label {
