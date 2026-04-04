@@ -1,1 +1,1 @@
-export { default } from 'components/FriendList/FriendListItem/FriendListItem';
+export { default } from '@/components/FriendList/FriendListItem/FriendListItem';

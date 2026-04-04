@@ -1,12 +1,7 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
     "paths": {
-      "@/*": ["./*"],
-      "components/*": ["components/*"],
-      "utils/*": ["utils/*"],
-      "types/*": ["types/*"],
-      "services/*": ["services/*"]
+      "@/*": ["src/*"]
     },
 
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
@@ -35,5 +30,12 @@
     "allowJs": true,
     "checkJs": false
   },
-  "include": ["src"]
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.config.*",
+    "eslint.config.*",
+    "vite.config.*"
+  ]
 }

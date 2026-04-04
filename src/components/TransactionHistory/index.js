@@ -1,1 +1,1 @@
-export { default } from 'components/TransactionHistory/TransactionHistory';
+export { default } from '@/components/TransactionHistory/TransactionHistory';
